@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background: #575757;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .content > div {
+            flex: 1;
+            padding: 20px;
+        }
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div id="about" class="container content">
+        <div>
+            <h2>About Me</h2>
+            <p>Describe yourself here. This is the section where you introduce your background, skills, and what you're passionate about.</p>
+        </div>
+    </div>
+
+    <div id="projects" class="container content">
+        <div>
+            <h2>Projects</h2>
+            <p>Here, you'll showcase your projects. Describe each one briefly, and if possible, provide links or images to demonstrate your work.</p>
+        </div>
+    </div>
+
+    <div id="contact" class="container content">
+        <div>
+            <h2>Contact Information</h2>
+            <p>Provide your contact information here, including the best way to reach you. This could be your email address, phone number, or links to your social media profiles.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright &copy; 2024 by [Your Name]. All rights reserved.</p>
+    </div>
+</body>
+</html>
