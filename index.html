@@ -13,28 +13,34 @@
             background-color: #000;
             line-height: 1.6;
         }
+
         .container {
             width: 90%;
             max-width: 1100px;
             margin: auto;
             padding: 50px 0;
         }
+
         header {
             text-align: center;
             padding-bottom: 25px;
             margin-bottom: 25px;
             border-bottom: 1px solid #444;
         }
+
         header h1 {
             font-size: 2.5em;
             margin: 0;
+            color: #fff;
         }
+
         nav {
             display: flex;
             justify-content: center;
             padding: 10px 0;
             font-size: 0.9em;
         }
+
         nav a {
             color: #aaa;
             text-decoration: none;
@@ -42,43 +48,90 @@
             margin: 0 10px;
             transition: color 0.3s ease-in-out;
         }
+
         nav a:hover {
             color: #fff;
         }
+
         .hero {
             text-align: center;
             margin: 50px 0;
+            padding: 100px 0;
+            background: linear-gradient(to right, #111, #333);
+            border-radius: 10px;
         }
+
         .hero h2 {
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
+            color: #fff;
         }
+
         .hero p {
             color: #aaa;
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .cta-button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
         }
+
         .project {
             background: #111;
             padding: 20px;
             border: 1px solid #333;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
         }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
         .project img {
             max-width: 100%;
             display: block;
             margin-bottom: 10px;
+            border-radius: 10px;
         }
+
         .project h3 {
             margin-top: 0;
+            color: #fff;
         }
+
+        .project p {
+            color: #ccc;
+        }
+
         .footer {
             text-align: center;
             padding: 20px;
             background: #111;
+            margin-top: 50px;
+        }
+
+        .footer p {
+            margin: 0;
+            color: #aaa;
         }
     </style>
 </head>
@@ -97,7 +150,8 @@
     <section class="hero">
         <div class="container">
             <h2>Build with [Your Name]</h2>
-            <p>At [Your Name], we deliver for clients by building solutions that power tomorrow's economy</p>
+            <p>At [Your Name], we deliver solutions that power tomorrow's economy through innovative technologies.</p>
+            <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
 
@@ -106,14 +160,28 @@
         <div class="project">
             <img src="path_to_image.jpg" alt="Project Image">
             <h3>Project Title</h3>
-            <p>Project description here...</p>
+            <p>A short description of the project, tools used, and its unique features. <br>
+            <a href="https://github.com/yourusername/project1" target="_blank" style="color: #4caf50;">View on GitHub</a></p>
         </div>
-        <!-- End of project div -->
+        <!-- Add more project divs below -->
+        <div class="project">
+            <img src="path_to_image2.jpg" alt="Project Image">
+            <h3>Project Title 2</h3>
+            <p>Another project description, highlighting key technologies used. <br>
+            <a href="https://github.com/yourusername/project2" target="_blank" style="color: #4caf50;">View on GitHub</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to collaborate, feel free to reach out to me.</p>
+        <p>Email: <a href="mailto:your.email@example.com" style="color: #4caf50;">your.email@example.com</a></p>
+        <p>Connect on <a href="https://www.linkedin.com/in/yourprofile" target="_blank" style="color: #4caf50;">LinkedIn</a></p>
     </section>
 
     <div class="footer">
         <div class="container">
-            <p>Copyright &copy; 2024 by [Your Name]. All rights reserved.</p>
+            <p>&copy; 2024 by [Your Name]. All rights reserved.</p>
         </div>
     </div>
 </body>
